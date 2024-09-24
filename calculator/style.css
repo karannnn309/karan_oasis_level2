@@ -1,0 +1,129 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Styling */
+.calculator-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #e9e9ef;
+    color: #333;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculator Buttons Grid */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* Button Styling */
+button.btn {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fafafa;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+button.btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Clear and Equal Buttons */
+button.clear, button.equal {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Backspace Button Styling */
+button.backspace {
+    background-color: #e67e22;
+    color: white;
+}
+
+button.clear:hover, button.equal:hover, button.backspace:hover {
+    background-color: #ff4c4c;
+}
+
+/* Operator Buttons Styling */
+button.operator {
+    background-color: #3498db;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #display {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    button.btn {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    #display {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    button.btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+

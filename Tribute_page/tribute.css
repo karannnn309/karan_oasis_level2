@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('https://images.indianexpress.com/2024/07/ch1831627.jpg'); /* Historic patterned background */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background for contrast */
+    border-radius: 10px;
+    border: 2px solid gold; /* Golden border to reflect royalty */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:#b22222; ; /* Dark red to evoke royal history */
+    border-radius: 10px 10px 0 0;
+    color: gold; /* Gold text to symbolize royalty */
+    font-family: 'Cinzel', serif; /* Historic font style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Soft shadow for text depth */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 4px solid gold; /* Golden border around image */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Content Section */
+.content-section {
+    padding: 20px;
+}
+
+.content-section h2, h3 {
+    color: gold;
+    font-family: 'Cinzel', serif; /* Historic font for headings */
+    margin-bottom: 15px;
+    border-bottom: 2px solid gold; /* Underline headings with gold */
+    padding-bottom: 5px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.content-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #b22222;
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: gold;
+    color: #b22222;
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-section {
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-section {
+        padding: 10px;
+    }
+
+    .content-section p {
+        font-size: 1.1rem;
+    }
+
+    .content-section ul li {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="todo-container">
+        <!-- Input Section on the Left Side -->
+        <div class="input-section">
+            <h2>Add a New Task</h2>
+            <input type="text" id="new-task" placeholder="Add a new task" />
+            
+            <!-- Due date and priority selection -->
+            <input type="date" id="task-date" placeholder="Due Date" />
+            
+            <select id="task-priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <!-- Task Section (Pending and Completed Tasks) on the Right Side -->
+        <div class="task-container">
+            <section class="task-section">
+                <h2>Pending Tasks</h2>
+                <ul id="pending-tasks"></ul>
+            </section>
+
+            <section class="task-section">
+                <h2>Completed Tasks</h2>
+                <ul id="completed-tasks"></ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+
